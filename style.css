@@ -20,11 +20,6 @@ html{
     list-style: none;/*Quitamos caracteristicas de lista de ul's dentro del navegador*/
     text-align: center;
 }
-/*.navegador>ul{
-    background:url('material/botella2.PNG') no-repeat left;
-    min-height:3%;
-    background-position: inherit;
-}*/
 .menu>li{
     position: relative;
     display: inline-block;/*Le damos un estilo en linea*/
@@ -59,4 +54,15 @@ html{
 
 .menu li:hover .submenu{
     display: block;
+}
+.formulario{
+
+    text-align: left;
+    width: 200px;
+    min-height: 1000px;
+    display: block;
+    background-color: white;
+}
+.formulario>input, label, select{
+    margin: 15px;
 }

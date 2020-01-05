@@ -4,6 +4,16 @@
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <meta name="description" content="Web tutorial">
         <meta name="keywords" content="HTML,CSS">
+        <script>
+            function fetch()
+            {
+                var get = document.getElementById("get1").value;
+                document.getElementById("put1").value = get;
+
+                var get =  document.getElementById("get2").value;
+                document.getElementById("put2").value = get;
+            }
+        </script>
         <meta name="Sebastià Adrover" content="Ståle Refsnes">
         <meta charset="UTF-8">
         <title>Substances</title>
@@ -60,5 +70,23 @@
                 </ul>
             </nav>
         </header>
+        <form class="formulario" action="producte.html">
+            <input id="form1" type="text" name="busqueda" placeholder="Buscar">
+            <input type="submit" value="Buscar"><br>
+            <label for="">Precio mínimo:</label><br>
+            <input type="range" id="get1" min="0" max="100" step="5" onchange="fetch()"><br>
+            <input type="text" id="put1"><br>
+            <label for="">Precio máximo</label><br>
+            <input type="range" id="get2" min="0" max="100" step="5" onchange="fetch()"><br>
+            <input type="text" id="put2"><br>
+            <select name="busqueda" id="form2">
+                <option value="0">¿Qué desea?</option>
+                <option value="1">Tintos</option>
+                <option value="2">Blancos</option>
+                <option value="3">Espumosos</option>
+                <option value="4">Dulces y especiales</option>
+                <option value="5">Acompañantes</option>
+            </select><br>
+        </form>
     </body>
 </html>

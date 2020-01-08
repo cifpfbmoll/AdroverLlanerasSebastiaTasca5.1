@@ -59,10 +59,20 @@ html{
 
     text-align: left;
     width: 200px;
-    min-height: 1000px;
+    height: max-content;
     display: block;
     background-color: white;
 }
-.formulario>input, label, select{
+.formulario>input, select{
+    margin: 20px;
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+}
+
+.formulario>h3{
     margin: 15px;
+}
+#stock{
+    margin: 6px;
 }

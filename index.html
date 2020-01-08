@@ -21,7 +21,7 @@
     <body>
         <header>
             <nav class="navegador">
-                <!--<img style="float: left; margin: 0px 15px 15px 0px;" src="material/botella.PNG" width="100" />-->
+                <a href="index.html"><img style="float: left; margin: 30px 30px 30px 30px;" src="material/botella.PNG" width="125"/></a>
                 <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="producte.html">BLANCOS</a>
@@ -70,13 +70,13 @@
                 </ul>
             </nav>
         </header>
-        <form class="formulario" action="producte.html">
+        <form class="formulario" action="index.html">
             <input id="form1" type="text" name="busqueda" placeholder="Buscar">
             <input type="submit" value="Buscar"><br>
-            <label for="">Precio mínimo:</label><br>
+            <h3>Precio mínimo:</h3><br>
             <input type="range" id="get1" min="0" max="100" step="5" onchange="fetch()"><br>
             <input type="text" id="put1"><br>
-            <label for="">Precio máximo</label><br>
+            <h3>Precio máximo:</h3><br>
             <input type="range" id="get2" min="0" max="100" step="5" onchange="fetch()"><br>
             <input type="text" id="put2"><br>
             <select name="busqueda" id="form2">
@@ -87,6 +87,7 @@
                 <option value="4">Dulces y especiales</option>
                 <option value="5">Acompañantes</option>
             </select><br>
+            <h3><label for=""><input type="checkbox" id="stock">En stock</label></h3>
         </form>
     </body>
 </html>

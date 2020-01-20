@@ -94,7 +94,12 @@ footer>ul>li>a{
     text-decoration: none;
 }
 footer>ul>li>a>h3{
-    margin: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+footer>ul>li>a>h3:hover{
+    color: burlywood;
 }
 #fotos {
     background-color: white;
@@ -116,12 +121,12 @@ footer>ul>li>a>h3{
 #fotos>#margen>div>a{
     text-decoration: none;
 }
+#fotos>#margen>div>a>h3:hover{
+    color: burlywood;
+}
 #fotos>#margen>div>a>img{
     height: 150px;
     width: 100px;
-}
-#fotos>#margen>div>a>h3:hover{
-    color: burlywood;
 }
 #fotos>#margen>div>a>h3{
     color: black;

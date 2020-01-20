@@ -83,6 +83,19 @@ footer{
     padding: 20px;
     
 }
+footer>ul{
+    list-style: none;
+}
+footer>ul>li{
+    display: inline-block;
+}
+footer>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+footer>ul>li>a>h3{
+    margin: 30px;
+}
 #fotos {
     background-color: white;
     height: 270px;

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: black 1px solid;*/
 }
 html{
     /*Añadimos imagen de fondo*/
@@ -75,4 +76,40 @@ html{
 }
 #stock{
     margin: 6px;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+#fotos {
+    background-color: white;
+    height: 270px;
+    margin-left: 200px;
+    margin-top: -580px;
+    margin-bottom: 310px;
+}
+#fotos>#titulo{
+    margin-left: 20px;
+}
+#fotos>#margen{
+    margin-left: 100px;
+}
+#fotos>#margen>div{
+    display: inline-block;
+    margin: 30px;
+}
+#fotos>#margen>div>a{
+    text-decoration: none;
+}
+#fotos>#margen>div>a>img{
+    height: 150px;
+    width: 100px;
+}
+#fotos>#margen>div>a>h3:hover{
+    color: burlywood;
+}
+#fotos>#margen>div>a>h3{
+    color: black;
 }

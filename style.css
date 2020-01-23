@@ -7,7 +7,7 @@
 }
 html{
     /*Añadimos imagen de fondo*/
-    background:url('material/viñedo.PNG') no-repeat center center;
+    background:url('material/fondo2.PNG') no-repeat center center;
     min-height:100%;
     background-size:cover;
 }

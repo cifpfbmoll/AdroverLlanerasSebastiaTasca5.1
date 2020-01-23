@@ -143,6 +143,9 @@ footer>ul>li>a>h3:hover{
 #media>div{
     margin: 60px;
 }
+.valora{
+    margin-left: 25%;
+}
 .valora>div{
     display: inline-block;
 }

@@ -2,148 +2,162 @@
 <!--Documento del producto-->
 <!DOCTYPE html>
 <html lang="en">
-    <!--Metadatos-->
-    <head>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        <meta name="description" content="Web tutorial">
-        <meta name="keywords" content="HTML,CSS">
-        <!--Función que nos permite establecer un rango de precio-->
-        <script> 
-            function fetch()
-            {
-                var get = document.getElementById("get1").value;
-                document.getElementById("put1").value = get;
+<!--Metadatos-->
 
-                var get =  document.getElementById("get2").value;
-                document.getElementById("put2").value = get;
-            }
-        </script>
-        <meta name="Sebastià Adrover" content="Ståle Refsnes">
-        <meta charset="UTF-8">
-        <title>Substances</title>
-    </head>
-    <body>
-        <!--Cabecera con logo hecho con office y menu desplegable-->
-        <header>
-            <img id="logo" src="material/LOGO.PNG" alt="">
-            <nav class="navegador">
-                <ul class="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="producte.html">BLANCOS</a>
-                        <ul class="submenu">
-                            <li><a href="producte.html">Ligeros y secos</a></li>
-                            <li><a href="producte.html">Secos y amplios</a></li>
-                            <li><a href="producte.html">Aromáticos</a></li>
-                            <li><a href="producte.html">Semisecos</a></li>
-                            <li><a href="producte.html">Dulces y licorosos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="producte.html">TINTOS</a>
-                        <ul class="submenu">
-                            <li><a href="producte.html">Rosados</a></li>
-                            <li><a href="producte.html">Ligeros</a></li>
-                            <li><a href="producte.html">De cuerpo medio</a></li>
-                            <li><a href="producte.html">Concentrados</a></li>
-                            <li><a href="producte.html">De guarda</a></li>
-                            <li><a href="producte.html">Especiales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="producte.html">ESPUMOSOS</a>
-                        <ul class="submenu">
-                            <li><a href="producte.html">Ligeros afrutados</a></li>
-                            <li><a href="producte.html">Intensos</a></li>
-                            <li><a href="producte.html">Aromáticos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="producte.html">DULCES Y ESPECIALES</a>
-                        <ul class="submenu">
-                            <li><a href="producte.html">Generosos</a></li>
-                            <li><a href="producte.html">Fermentación parcial</a></li>
-                            <li><a href="producte.html">Mistelas</a></li>
-                            <li><a href="producte.html">Vendimia tardía</a></li>
-                            <li><a href="producte.html">Pasicados y tostados</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="producte.html">ACOMPAÑANTES</a>
-                        <ul class="submenu">
-                            <li><a href="producte.html">Quesos</a></li>
-                            <li><a href="producte.html">Embutidos</a></li>
-                            <li><a href="producte.html">Ahumados</a></li>
-                            <li><a href="producte.html">Snacks</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--Aqui empieza el formulario-->
-        <form class="formulario" action="index.html">
-            <input id="form1" type="text" name="busqueda" placeholder="Buscar">
-            <input type="submit" value="Buscar"><br>
-            <h3>Precio mínimo:</h3><br>
-            <input type="range" id="get1" min="0" max="100" step="5" onchange="fetch()"><br>
-            <input type="text" id="put1"><br>
-            <h3>Precio máximo:</h3><br>
-            <input type="range" id="get2" min="0" max="100" step="5" onchange="fetch()"><br>
-            <input type="text" id="put2"><br>
-            <select name="busqueda" id="form2">
-                <option value="0">¿Qué desea?</option>
-                <option value="1">Tintos</option>
-                <option value="2">Blancos</option>
-                <option value="3">Espumosos</option>
-                <option value="4">Dulces y especiales</option>
-                <option value="5">Acompañantes</option>
-            </select><br>
-            <h3><label for=""><input type="checkbox" id="stock">En stock</label></h3>
-        </form>
-        <!--Aquí empiezan los ítems principales de nuestra tienda-->
-        <div id="fotos">
-            <div id="titulo">
-                <h2>Nuestra mejor selección de vinos:</h2>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="description" content="Web tutorial">
+    <meta name="keywords" content="HTML,CSS">
+    <!--Función que nos permite establecer un rango de precio-->
+    <script>
+        function fetch() {
+            var get = document.getElementById("get1").value;
+            document.getElementById("put1").value = get;
+
+            var get = document.getElementById("get2").value;
+            document.getElementById("put2").value = get;
+        }
+    </script>
+    <meta name="Sebastià Adrover" content="Ståle Refsnes">
+    <meta charset="UTF-8">
+    <title>Substances</title>
+</head>
+
+<body>
+    <!--Cabecera con logo hecho con office y menu desplegable-->
+    <header>
+        <img id="logo" src="material/LOGO.PNG" alt="">
+        <nav class="navegador">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="producte.html">BLANCOS</a>
+                    <ul class="submenu">
+                        <li><a href="producte.html">Ligeros y secos</a></li>
+                        <li><a href="producte.html">Secos y amplios</a></li>
+                        <li><a href="producte.html">Aromáticos</a></li>
+                        <li><a href="producte.html">Semisecos</a></li>
+                        <li><a href="producte.html">Dulces y licorosos</a></li>
+                    </ul>
+                </li>
+                <li><a href="producte.html">TINTOS</a>
+                    <ul class="submenu">
+                        <li><a href="producte.html">Rosados</a></li>
+                        <li><a href="producte.html">Ligeros</a></li>
+                        <li><a href="producte.html">De cuerpo medio</a></li>
+                        <li><a href="producte.html">Concentrados</a></li>
+                        <li><a href="producte.html">De guarda</a></li>
+                        <li><a href="producte.html">Especiales</a></li>
+                    </ul>
+                </li>
+                <li><a href="producte.html">ESPUMOSOS</a>
+                    <ul class="submenu">
+                        <li><a href="producte.html">Ligeros afrutados</a></li>
+                        <li><a href="producte.html">Intensos</a></li>
+                        <li><a href="producte.html">Aromáticos</a></li>
+                    </ul>
+                </li>
+                <li><a href="producte.html">DULCES Y ESPECIALES</a>
+                    <ul class="submenu">
+                        <li><a href="producte.html">Generosos</a></li>
+                        <li><a href="producte.html">Fermentación parcial</a></li>
+                        <li><a href="producte.html">Mistelas</a></li>
+                        <li><a href="producte.html">Vendimia tardía</a></li>
+                        <li><a href="producte.html">Pasicados y tostados</a></li>
+                    </ul>
+                </li>
+                <li><a href="producte.html">ACOMPAÑANTES</a>
+                    <ul class="submenu">
+                        <li><a href="producte.html">Quesos</a></li>
+                        <li><a href="producte.html">Embutidos</a></li>
+                        <li><a href="producte.html">Ahumados</a></li>
+                        <li><a href="producte.html">Snacks</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Aqui empieza el formulario-->
+    <form class="formulario" action="index.html">
+        <input id="form1" type="text" name="busqueda" placeholder="Buscar">
+        <input type="submit" value="Buscar"><br>
+        <h3>Precio mínimo:</h3><br>
+        <input type="range" id="get1" min="0" max="100" step="5" onchange="fetch()"><br>
+        <input type="text" id="put1"><br>
+        <h3>Precio máximo:</h3><br>
+        <input type="range" id="get2" min="0" max="100" step="5" onchange="fetch()"><br>
+        <input type="text" id="put2"><br>
+        <select name="busqueda" id="form2">
+            <option value="0">¿Qué desea?</option>
+            <option value="1">Tintos</option>
+            <option value="2">Blancos</option>
+            <option value="3">Espumosos</option>
+            <option value="4">Dulces y especiales</option>
+            <option value="5">Acompañantes</option>
+        </select><br>
+        <h3><label for=""><input type="checkbox" id="stock">En stock</label></h3>
+    </form>
+    <!--Aquí empiezan los ítems principales de nuestra tienda-->
+    <div id="fotos">
+        <div id="titulo">
+            <h2>Nuestra mejor selección de vinos:</h2>
+        </div>
+        <div id="margen">
+            <div>
+                <a href="producte.html">
+                    <img src="material/tinto.PNG" alt="">
+                    <h3>Chateau Lafite 1787<br>Precio: 120€</h3>
+                </a>
             </div>
-            <div id="margen">
-                <div>
-                    <a href="producte.html">
-                        <img src="material/tinto.PNG" alt="">
-                        <h3>Chateau Lafite 1787<br>Precio: 120€</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="producte.html">
-                        <img src="material/blanco.PNG" alt="">
-                        <h3>Château Mouton 1945<br>Precio: 95€</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="producte.html">
-                        <img src="material/Dulces.PNG" alt="">
-                        <h3>Chateau d Yquem 1784<br>Precio: 79€</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="producte.html">
-                        <img src="material/Espumoso.PNG" alt="">
-                        <h3>Massandra Sherry<br>Precio: 90€</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="producte.html">
-                        <img src="material/tinto2.PNG" alt="">
-                        <h3>Domaine Romanée-Conti<br>Precio: 160€</h3>
-                    </a>
-                </div>
+            <div>
+                <a href="producte.html">
+                    <img src="material/blanco.PNG" alt="">
+                    <h3>Château Mouton 1945<br>Precio: 95€</h3>
+                </a>
+            </div>
+            <div>
+                <a href="producte.html">
+                    <img src="material/Dulces.PNG" alt="">
+                    <h3>Chateau d Yquem 1784<br>Precio: 79€</h3>
+                </a>
+            </div>
+            <div>
+                <a href="producte.html">
+                    <img src="material/Espumoso.PNG" alt="">
+                    <h3>Massandra Sherry<br>Precio: 90€</h3>
+                </a>
+            </div>
+            <div>
+                <a href="producte.html">
+                    <img src="material/tinto2.PNG" alt="">
+                    <h3>Domaine Romanée-Conti<br>Precio: 160€</h3>
+                </a>
             </div>
         </div>
-        <!--Pie de página con menú secundario-->
-        <footer>
-            <ul>
-                <li><a href="index.html"><h3>Home</h3></a></li>
-                <li><a href="producte.html"><h3>Blancos</h3></a></li>
-                <li><a href="producte.html"><h3>Tintos</h3></a></li>
-                <li><a href="producte.html"><h3>Espumosos</h3></a></li>
-                <li><a href="producte.html"><h3>Dulces y Especiales</h3></a></li>
-                <li><a href="producte.html"><h3>Acompañantes</h3></a></li>
-            </ul>
-            <h6>Copyright &copy; 2019 Derechos de reserva registrados</h6>
-        </footer>
-    </body>
+    </div>
+    <!--Pie de página con menú secundario-->
+    <footer>
+        <ul>
+            <li><a href="index.html">
+                    <h3>Home</h3>
+                </a></li>
+            <li><a href="producte.html">
+                    <h3>Blancos</h3>
+                </a></li>
+            <li><a href="producte.html">
+                    <h3>Tintos</h3>
+                </a></li>
+            <li><a href="producte.html">
+                    <h3>Espumosos</h3>
+                </a></li>
+            <li><a href="producte.html">
+                    <h3>Dulces y Especiales</h3>
+                </a></li>
+            <li><a href="producte.html">
+                    <h3>Acompañantes</h3>
+                </a></li>
+        </ul>
+        <h6>Copyright &copy; 2019 Derechos de reserva registrados</h6>
+    </footer>
+</body>
+
 </html>

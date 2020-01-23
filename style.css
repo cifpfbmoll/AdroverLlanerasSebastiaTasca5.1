@@ -1,3 +1,5 @@
+/*Muchos de los comandos de style son iguales a los de style_producte*/
+
 *{
     /*Quitamos margenes y rellenos de nuestra página*/
     margin: 0;
@@ -59,6 +61,7 @@ html{
 .menu li:hover .submenu{
     display: block;
 }
+/*Formato del formulario flotado a la izquierda en forma de columna con estilo bloque*/
 .formulario{
     text-align: left;
     width: 200px;
@@ -67,6 +70,7 @@ html{
     background-color: white;
     margin-bottom: -600px;
 }
+/*A partir de aqui le damos estilo a los elementos que componen el formulario*/
 .formulario>input, select{
     margin: 20px;
     border-radius: 15px;
@@ -80,6 +84,7 @@ html{
 #stock{
     margin: 6px;
 }
+/*Es el mismo footer que el de la página producto*/
 footer{
     background-color: white;
     text-align: center;
@@ -103,6 +108,7 @@ footer>ul>li>a>h3{
 footer>ul>li>a>h3:hover{
     color: burlywood;
 }
+/*Estilo a los items*/
 #fotos {
     background-color: white;
     height: 270px;
@@ -116,13 +122,13 @@ footer>ul>li>a>h3:hover{
     margin-left: 100px;
 }
 #fotos>#margen>div{
-    display: inline-block;
+    display: inline-block;/*Estilo en linea de bloques*/
     margin: 30px;
 }
 #fotos>#margen>div>a{
     text-decoration: none;
 }
-#fotos>#margen>div>a>h3:hover{
+#fotos>#margen>div>a>h3:hover{/*Cuando pasas el ratón por encima del nomre y precio de los items cambian de color*/
     color: burlywood;
 }
 #fotos>#margen>div>a>img{

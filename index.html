@@ -1,10 +1,14 @@
+<!--Sebastià Adrover-->
+<!--Documento del producto-->
 <!DOCTYPE html>
 <html lang="en">
+    <!--Metadatos-->
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <meta name="description" content="Web tutorial">
         <meta name="keywords" content="HTML,CSS">
-        <script>
+        <!--Función que nos permite establecer un rango de precio-->
+        <script> 
             function fetch()
             {
                 var get = document.getElementById("get1").value;
@@ -19,6 +23,7 @@
         <title>Substances</title>
     </head>
     <body>
+        <!--Cabecera con logo hecho con office y menu desplegable-->
         <header>
             <img id="logo" src="material/LOGO.PNG" alt="">
             <nav class="navegador">
@@ -70,6 +75,7 @@
                 </ul>
             </nav>
         </header>
+        <!--Aqui empieza el formulario-->
         <form class="formulario" action="index.html">
             <input id="form1" type="text" name="busqueda" placeholder="Buscar">
             <input type="submit" value="Buscar"><br>
@@ -89,6 +95,7 @@
             </select><br>
             <h3><label for=""><input type="checkbox" id="stock">En stock</label></h3>
         </form>
+        <!--Aquí empiezan los ítems principales de nuestra tienda-->
         <div id="fotos">
             <div id="titulo">
                 <h2>Nuestra mejor selección de vinos:</h2>
@@ -97,19 +104,19 @@
                 <div>
                     <a href="producte.html">
                         <img src="material/tinto.PNG" alt="">
-                        <h3>Chateau Lafite 1787<br>Precio: 90€</h3>
+                        <h3>Chateau Lafite 1787<br>Precio: 120€</h3>
                     </a>
                 </div>
                 <div>
                     <a href="producte.html">
                         <img src="material/blanco.PNG" alt="">
-                        <h3>Château Mouton 1945<br>Precio: 90€</h3>
+                        <h3>Château Mouton 1945<br>Precio: 95€</h3>
                     </a>
                 </div>
                 <div>
                     <a href="producte.html">
                         <img src="material/Dulces.PNG" alt="">
-                        <h3>Chateau d Yquem 1784<br>Precio: 90€</h3>
+                        <h3>Chateau d Yquem 1784<br>Precio: 79€</h3>
                     </a>
                 </div>
                 <div>
@@ -121,14 +128,15 @@
                 <div>
                     <a href="producte.html">
                         <img src="material/tinto2.PNG" alt="">
-                        <h3>Domaine Romanée-Conti<br>Precio: 90€</h3>
+                        <h3>Domaine Romanée-Conti<br>Precio: 160€</h3>
                     </a>
                 </div>
             </div>
         </div>
+        <!--Pie de página con menú secundario-->
         <footer>
             <ul>
-                <li><a href="producte.html"><h3>Home</h3></a></li>
+                <li><a href="index.html"><h3>Home</h3></a></li>
                 <li><a href="producte.html"><h3>Blancos</h3></a></li>
                 <li><a href="producte.html"><h3>Tintos</h3></a></li>
                 <li><a href="producte.html"><h3>Espumosos</h3></a></li>

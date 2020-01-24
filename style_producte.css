@@ -1,84 +1,108 @@
-*{
+* {
     /*Quitamos margenes y rellenos de nuestra página*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*border: black 1px solid;*/
 }
-html{
+
+html {
     /*Añadimos imagen de fondo*/
     background-color: white;
-    min-height:100%;
-    background-size:cover;
+    min-height: 100%;
+    background-size: cover;
 }
-#logo{
+
+#logo {
     width: 100%;
     height: 150px;
 }
-#encabezado>img{
+
+#encabezado>img {
     width: 100%;
     height: 300px;
 }
+
 .navegador {
     width: 100%;
     background-color: white;
     background-size: cover;
 }
-.navegador>ul{
-    list-style: none;/*Quitamos caracteristicas de lista de ul's dentro del navegador*/
+
+.navegador>ul {
+    list-style: none;
+    /*Quitamos caracteristicas de lista de ul's dentro del navegador*/
     text-align: center;
 }
-.menu>li{
+
+.menu>li {
     position: relative;
-    display: inline-block;/*Le damos un estilo en linea*/
+    display: inline-block;
+    /*Le damos un estilo en linea*/
 }
-.menu>li>a{
+
+.menu>li>a {
     display: block;
     padding: 15px 20px;
     color: black;
-    text-decoration: none;/*Quitamos el subrallado de una etiqueta acces*/
+    text-decoration: none;
+    /*Quitamos el subrallado de una etiqueta acces*/
 }
-.menu li a:hover{/*Cambio de color al pasar el ratón por encima*/
+
+.menu li a:hover {
+    /*Cambio de color al pasar el ratón por encima*/
     color: burlywood;
 }
-.submenu{
+
+.submenu {
     position: absolute;
     width: 170px;
     display: none;
     background-color: white;
 }
-.submenu>li{
+
+.submenu>li {
     list-style: none;
     text-align: left;
-    display: block;/*Estructura en bloque*/
+    display: block;
+    /*Estructura en bloque*/
 }
-.submenu li a{
+
+.submenu li a {
     position: relative;
     display: block;
     padding: 15px;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.menu li:hover .submenu{/*Desplegable del menú*/
+.menu li:hover .submenu {
+    /*Desplegable del menú*/
     display: block;
 }
-#producte{
+
+#producte {
     margin-top: 60px;
     margin-left: 80px;
     margin-bottom: 70px;
 }
-#description{
+
+#description {
     margin-top: -200px;
     width: 600px;
 }
-#description>div>h3{
+
+#description>div>h3 {
     text-align: justify;
 }
-#imagen1, #imagen2, #imagen3{
+
+#imagen1,
+#imagen2,
+#imagen3 {
     height: 320px;
 }
-#boton{
+
+#boton {
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
@@ -88,118 +112,158 @@ html{
     border-radius: 6px;
     border: 2px solid #0016b0;
 }
-#boton:hover{/*El fondo del boton de añadir a la cesta cambia de color al pasar el ratón por encima*/
+
+#boton:hover {
+    /*El fondo del boton de añadir a la cesta cambia de color al pasar el ratón por encima*/
     color: #1883ba;
     background-color: #ffffff;
-    cursor: pointer;/*Al pasar el ratón este se convierte en un apuntador*/
+    cursor: pointer;
+    /*Al pasar el ratón este se convierte en un apuntador*/
 }
-#producte>div{
+
+#producte>div {
     display: inline-block;
     margin: 40px;
 }
-#producte>.imagen>img{
+
+#producte>.imagen>img {
     margin-left: 15px;
     margin-right: 15px;
 }
-footer{/*Estilo del footer*/
+
+footer {
+    /*Estilo del footer*/
     background-color: white;
     text-align: center;
-    padding: 20px; 
+    padding: 20px;
 }
+
+
 /*Configuración del segundo menú*/
-footer>ul{
+
+footer>ul {
     list-style: none;
 }
-footer>ul>li{
+
+footer>ul>li {
     display: inline-block;
 }
-footer>ul>li>a{
+
+footer>ul>li>a {
     color: black;
     text-decoration: none;
 }
-footer>ul>li>a>h3{
+
+footer>ul>li>a>h3 {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 20px;
 }
-footer>ul>li>a>h3:hover{
+
+footer>ul>li>a>h3:hover {
     color: burlywood;
 }
+
+
 /*Separacón lateral*/
-#valoracion, #media{
+
+#valoracion,
+#media {
     margin-left: 80px;
 }
-#valoracion>div{
+
+#valoracion>div {
     margin: 30px;
 }
-#media>div{
+
+#media>div {
     margin: 60px;
 }
-.valora{
+
+.valora {
     margin-left: 25%;
 }
-.valora>div{/*Colocar la valoración y la media en linea*/
+
+.valora>div {
+    /*Colocar la valoración y la media en linea*/
     display: inline-block;
 }
+
+
 /*Funcionamiento de la valoración de estrellas*/
+
 .ec-stars-wrapper {
-	/* Espacio entre los inline-block (los hijos, los `a`) 
+    /* Espacio entre los inline-block (los hijos, los `a`) 
 	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
-	font-size: 0;
-	/* Podríamos quitarlo, 
+    font-size: 0;
+    /* Podríamos quitarlo, 
 		pero de esta manera (siempre que no le demos padding), 
 		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
 		también se esté haciendo hover a alguna estrella */
-	display: inline-block;
+    display: inline-block;
 }
-.estrellas{
+
+.estrellas {
     font-size: 0;
     display: inline-block;
 }
+
 .ec-stars-wrapper a {
-	text-decoration: none;
-	display: inline-block;
-	/* Volver a dar tamaño al texto */
-	font-size: 40px;
-	font-size: 2rem;
-	color: #888;
+    text-decoration: none;
+    display: inline-block;
+    /* Volver a dar tamaño al texto */
+    font-size: 40px;
+    font-size: 2rem;
+    color: #888;
 }
-.estrellas a{
+
+.estrellas a {
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
     font-size: 2rem;
     color: rgb(39, 130, 228);
 }
-#estrellas_media>div{
+
+#estrellas_media>div {
     display: inline-block;
     margin-left: 15px;
     margin-right: 15px;
 }
-#estrellas_media>div>h1{
+
+#estrellas_media>div>h1 {
     color: rgb(39, 130, 228);
 }
+
 .ec-stars-wrapper:hover a {
     color: rgb(39, 130, 228);
     cursor: pointer;
 }
+
+
 /*
  * El selector de hijo, es necesario para aumentar la especifidad
  */
-.ec-stars-wrapper > a:hover ~ a {
-	color: #888;
+
+.ec-stars-wrapper>a:hover~a {
+    color: #888;
 }
+
+
 /*Formato del bloque de información general*/
-#informacion{
+
+#informacion {
     border: solid 1px black;
     margin-left: 33%;
     margin-right: 33%;
 }
-#informacion>div{
+
+#informacion>div {
     display: inline-block;
     margin: 25px;
     text-align: center;
 }
-.texto_info{
+
+.texto_info {
     text-align: center;
 }

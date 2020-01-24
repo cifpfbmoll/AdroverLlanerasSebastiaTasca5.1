@@ -1,68 +1,84 @@
 /*Muchos de los comandos de style son iguales a los de style_producte*/
 
-*{
+* {
     /*Quitamos margenes y rellenos de nuestra página*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*border: black 1px solid;*/
 }
-html{
+
+html {
     /*Añadimos imagen de fondo*/
-    background:url('material/fondo2.PNG') no-repeat center center;
-    min-height:100%;
-    background-size:cover;
+    background: url('material/fondo2.PNG') no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
 }
-#logo{
+
+#logo {
     width: 100%;
     height: 150px;
 }
+
 .navegador {
     width: 100%;
     margin-top: -10px;
     background-color: white;
     background-size: cover;
 }
-.navegador>ul{
-    list-style: none;/*Quitamos caracteristicas de lista de ul's dentro del navegador*/
+
+.navegador>ul {
+    list-style: none;
+    /*Quitamos caracteristicas de lista de ul's dentro del navegador*/
     text-align: center;
 }
-.menu>li{
+
+.menu>li {
     position: relative;
-    display: inline-block;/*Le damos un estilo en linea*/
+    display: inline-block;
+    /*Le damos un estilo en linea*/
 }
-.menu>li>a{
+
+.menu>li>a {
     display: block;
     padding: 15px 20px;
     color: black;
     text-decoration: none;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: burlywood;
 }
-.submenu{
+
+.submenu {
     position: absolute;
     width: 170px;
     display: none;
     background-color: white;
 }
-.submenu>li{
+
+.submenu>li {
     list-style: none;
     text-align: left;
     display: block;
 }
-.submenu li a{
+
+.submenu li a {
     position: relative;
     display: block;
     padding: 15px;
     text-decoration: none;
-    color:black;
+    color: black;
 }
-.menu li:hover .submenu{
+
+.menu li:hover .submenu {
     display: block;
 }
+
+
 /*Formato del formulario flotado a la izquierda en forma de columna con estilo bloque*/
-.formulario{
+
+.formulario {
     text-align: left;
     width: 200px;
     height: 100%;
@@ -70,71 +86,96 @@ html{
     background-color: white;
     margin-bottom: -600px;
 }
+
+
 /*A partir de aqui le damos estilo a los elementos que componen el formulario*/
-.formulario>input, select{
+
+.formulario>input,
+select {
     margin: 20px;
     border-radius: 15px;
     width: 120px;
     height: 30px;
 }
 
-.formulario>h3{
+.formulario>h3 {
     margin: 15px;
 }
-#stock{
+
+#stock {
     margin: 6px;
 }
+
+
 /*Es el mismo footer que el de la página producto*/
-footer{
+
+footer {
     background-color: white;
     text-align: center;
     padding: 20px;
 }
-footer>ul{
+
+footer>ul {
     list-style: none;
 }
-footer>ul>li{
+
+footer>ul>li {
     display: inline-block;
 }
-footer>ul>li>a{
+
+footer>ul>li>a {
     color: black;
     text-decoration: none;
 }
-footer>ul>li>a>h3{
+
+footer>ul>li>a>h3 {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 20px;
 }
-footer>ul>li>a>h3:hover{
+
+footer>ul>li>a>h3:hover {
     color: burlywood;
 }
+
+
 /*Estilo a los items*/
+
 #fotos {
     background-color: white;
     height: 270px;
     margin-left: 200px;
     margin-top: 240px;
 }
-#fotos>#titulo{
+
+#fotos>#titulo {
     margin-left: 20px;
 }
-#fotos>#margen{
+
+#fotos>#margen {
     margin-left: 100px;
 }
-#fotos>#margen>div{
-    display: inline-block;/*Estilo en linea de bloques*/
+
+#fotos>#margen>div {
+    display: inline-block;
+    /*Estilo en linea de bloques*/
     margin: 30px;
 }
-#fotos>#margen>div>a{
+
+#fotos>#margen>div>a {
     text-decoration: none;
 }
-#fotos>#margen>div>a>h3:hover{/*Cuando pasas el ratón por encima del nomre y precio de los items cambian de color*/
+
+#fotos>#margen>div>a>h3:hover {
+    /*Cuando pasas el ratón por encima del nomre y precio de los items cambian de color*/
     color: burlywood;
 }
-#fotos>#margen>div>a>img{
+
+#fotos>#margen>div>a>img {
     height: 150px;
     width: 100px;
 }
-#fotos>#margen>div>a>h3{
+
+#fotos>#margen>div>a>h3 {
     color: black;
 }
